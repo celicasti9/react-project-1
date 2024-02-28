@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.navbar {
+  background-color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+
+
+.footer {
+  background-color: bisque;
+}
