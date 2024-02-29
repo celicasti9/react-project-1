@@ -1,3 +1,5 @@
+//import "../styles/list.css"
+
 function List (props) {
   return (
     <div className="list">
