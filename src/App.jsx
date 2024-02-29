@@ -6,17 +6,17 @@ import Sidebar from '../components/Sidebar'
 import List from '../components/List'
 import Card from '../components/Card'
 import products from "../src/data/products.json";
-import { Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <div className='App'>
       <Navbar />
-      
       <Sidebar />
-
+      <Sidebar />
       <List>
       {products.map((product) => (
         <Card
@@ -29,6 +29,14 @@ function App() {
       </List>
       
       <Footer />
+       {/* 
+       <Routes>
+        <Route path='/' element={<App />}/>
+        <Route path='/about' element={<About />}/>
+      </Routes>
+      */}
+
+      </div>
     </>
   )
 }
