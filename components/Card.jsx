@@ -1,10 +1,20 @@
-function Card (props) {
+
+
+function Card (products) {
+    const handleDeleteClick = () => {
+        // 
+        console.log(`Deleting ${products.title}`);
+      };
+
     return (
       <div className="Card">
-        <p className="card-title"><b>Title:</b> {props.title}</p>
-        <p className="card-price"><b>Price:</b> {props.price}</p>
-        <p className="card-rating"><b>Rating: {props.rating}</b></p>
-        <br />
+        <p className="card-title"><b>Title:</b> {products.title}</p>
+        <p className="card-price"><b>Price:</b> {products.price}</p>
+        <p className="card-rating"><b>Rating: {products.rating}</b></p>
+        <button className="buy-button" onClick={handleDeleteClick}>
+        Delete
+      </button>
+      <br />
       </div>
     )
   }

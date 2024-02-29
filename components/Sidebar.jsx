@@ -5,18 +5,18 @@ function Sidebar() {
         <div className="sidebar">
         <ul>
             <h3>
-                Sidebar
+                Admin Panel
             </h3>
-            <li><a href="#">home</a>
+            <li><a href="#">Home</a>
 
             </li>
             <li><a href="#"></a>
 
             </li>
-            <li><a href="#"></a>
+            <li><a href="#">Settings</a>
 
             </li>
-            <li><a href="#"></a>
+            <li><a href="#">Logout</a>
 
             </li>
         </ul>

@@ -1,19 +1,23 @@
 import Button from "./Button";
 
 function Navbar() {
-    return (
-    <div className="navbar">
-        <img src="./images/studentLogo.jpg" alt="Logo" width="200" height="200"/> 
-      <ul className="navbar">
-        <h1>Student Commerce Online</h1>
-        <h4>Navbar</h4>
-         <li><a href="#">Home</a></li>
-         <li><a href="#">Products</a></li>
-         <li><a href="#">About Us</a></li>
-       </ul>
-  </div>
-    )
+  return (
+    <div className="navbar-container">
+      <div className="navbar">
+        <img src="./images/studentLogo.jpg" alt="Logo" width="50" height="50" />
+        <div className="navbar-title">
+          <h1>Student Commerce Online</h1>
+          <h4>Navbar</h4>
+        </div>
+        <ul className="navbar-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <Button label="Sign In" />
+      </div>
+    </div>
+  );
 }
 
 export default Navbar;
-
