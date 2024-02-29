@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar'
 import List from '../components/List'
 import Card from '../components/Card'
 import products from "../src/data/products.json";
+import { Route } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-
+      
       <Sidebar />
 
       <List>

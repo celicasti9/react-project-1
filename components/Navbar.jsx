@@ -8,7 +8,6 @@ function Navbar() {
         <img src="./images/studentLogo.jpg" alt="Logo" width="50" height="50" />
         <div className="navbar-title">
           <h1>Student Commerce Online</h1>
-          <h4>Navbar</h4>
         </div>
         <ul className="navbar-links">
           <li><a href="#">Home</a></li>
