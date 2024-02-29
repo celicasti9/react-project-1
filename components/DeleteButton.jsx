@@ -10,4 +10,4 @@ function DeleteButton() {
     )
 }
 
-export default Footer;
+export default DeleteButton;
