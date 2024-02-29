@@ -1,7 +1,7 @@
 function List (props) {
   return (
-    <div>
-      <h2>Products List</h2>
+    <div className="list">
+      <h2 className="list-title">Products List</h2>
       {props.children} 
     </div>
   );

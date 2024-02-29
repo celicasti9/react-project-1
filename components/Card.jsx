@@ -1,9 +1,9 @@
 function Card (props) {
     return (
       <div className="Card">
-        <p><b>Title:</b> {props.title}</p>
-        <p><b>Price:</b> {props.price}</p>
-        <p><b>Rating: {props.rating}</b></p>
+        <p className="card-title"><b>Title:</b> {props.title}</p>
+        <p className="card-price"><b>Price:</b> {props.price}</p>
+        <p className="card-rating"><b>Rating: {props.rating}</b></p>
         <br />
       </div>
     )

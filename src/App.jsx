@@ -16,7 +16,7 @@ function App() {
       <Greeting />
       <Sidebar />
       <List>
-        <Card
+        <Card 
           title="iPhone 9"
           price={549}
           rating={4.69}
