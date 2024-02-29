@@ -188,7 +188,14 @@ body {
   background-color: black;
   color: #fff;
   text-align: center;
-  position: relative; /* Change to relative */
+  position: static; 
   bottom: 0;
   width: 100%;
+}
+
+.footer:hover {
+  left: 0;
+  z-index: 101;
+  opacity: 1;
+  pointer-events: auto;
 }

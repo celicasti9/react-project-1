@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar'
 import List from '../components/List'
 import Card from '../components/Card'
 import products from "../src/data/products.json";
+//import About from "../pages/About"
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -28,7 +29,6 @@ function App() {
       ))}
       </List>
       
-      <Footer />
        {/* 
        <Routes>
         <Route path='/' element={<App />}/>
@@ -37,6 +37,7 @@ function App() {
       */}
 
       </div>
+      <Footer />
     </>
   )
 }
