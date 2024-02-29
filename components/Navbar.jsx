@@ -1,7 +1,10 @@
+import Button from "./Button";
+
 function Navbar() {
     return (
     <div className="navbar">
         <img src="./images/studentLogo.jpg" alt="Logo" width="200" height="200"/>
+        <button />  
       <ul className="navbar">
         <h1>Student Commerce Online</h1>
         <h4>Navbar</h4>

@@ -42,6 +42,10 @@
 }
 
 
+
+
+
+/* own code */
 .navbar {
   background-color: black;
   list-style-type: none;
@@ -56,4 +60,8 @@
 
 .footer {
   background-color: rgb(48, 32, 12);
+}
+
+.button {
+  background-color: white;
 }
