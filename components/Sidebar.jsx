@@ -10,7 +10,7 @@ function Sidebar() {
             <li><a href="#">Home</a>
 
             </li>
-            <li><a href="#"></a>
+            <li><a href="#" className="AboutPage">About</a>
 
             </li>
             <li><a href="#">Settings</a>
