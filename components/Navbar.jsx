@@ -16,7 +16,11 @@ function Navbar() {
            Home
         </NavLink></li>
 
-          <li><a href="#">Products</a></li>
+          <li><NavLink 
+            to="/dashboard" 
+            className={({ isActive }) => isActive ? "selected" : ""}>
+            Dashboard
+          </NavLink></li>
           
             <li><NavLink 
             to="/about" 

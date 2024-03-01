@@ -11,7 +11,8 @@ function Dashboard () {
     return (
       <>
       <div>
-        <List>
+        <Navbar />
+        <List><Sidebar />
         {products.map((product) => (
           <Card
             id={product.id}

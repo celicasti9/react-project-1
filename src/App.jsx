@@ -11,12 +11,10 @@ function App() {
 
   return (
     <>
-    
-    
     <div className='App'>
       <Navbar />
       <Sidebar />
-      <h1>Welcome to the main page baby!</h1>     
+   
         
        <Routes>
         <Route path="/about" element={<App />}/>
@@ -24,8 +22,7 @@ function App() {
         
       </Routes>
       </div>
-      <Footer />
-      
+      <Footer /> 
     </>
   )
 }
