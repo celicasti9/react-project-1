@@ -1,5 +1,6 @@
 import Button from "./Button";
 //import "../styles/navbar.css"
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -10,13 +11,60 @@ function Navbar() {
           <h1>Student Commerce Online</h1>
         </div>
         <ul className="navbar-links">
-          <li><a href="#">Home</a></li>
+        
+        <li><NavLink to="/" className={({ isActive }) => isActive ? "selected" : ""}>
+           Home
+        </NavLink></li>
+
           <li><a href="#">Products</a></li>
-          <li><a href="#">About Us</a></li>
+          
+            <li><NavLink 
+            to="/about" 
+            className={({ isActive }) => isActive ? "selected" : ""}>
+            About
+          </NavLink></li>
         </ul>
-        <Button label="Sign In" />
+        <Button />
       </div>
     </div>
   );
 }
 export default Navbar;
+
+
+
+
+
+
+
+// import { Link, NavLink } from "react-router-dom";
+
+// function Navbar() {
+//     return (
+//         <nav className="Navbar">
+//             <ul>
+                
+//         <NavLink to="/" className={({ isActive }) => isActive ? "selected" : ""}>
+//           Home
+//         </NavLink>
+        
+//         <NavLink 
+//           to="/about" 
+//           className={({ isActive }) => isActive ? "selected" : ""}
+//          >
+//           About
+//         </NavLink>
+        
+//         <NavLink 
+//           to="/projects" 
+//           className={({ isActive }) => isActive ? "selected" : ""}
+//         >
+//           Projects
+//         </NavLink>
+
+//             </ul>
+//         </nav>
+//     );
+// }
+
+// export default Navbar;

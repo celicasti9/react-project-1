@@ -84,6 +84,7 @@ body {
   transition: left 0.3s ease;
   z-index: 100;
   opacity: 0;
+  margin-top: 4%;
 }
 
 .sidebar:hover {
@@ -181,7 +182,23 @@ body {
 }
 
 .buy-button:hover {
-  background-color: #c10811; /* Darker shade on hover */
+  background-color: #860007; /* Darker shade on hover */
+}
+
+.details-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #e2b111; /* Netflix red color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #8f6900; /* Darker shade on hover */
 }
 
 /* Footer Styles */

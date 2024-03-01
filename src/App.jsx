@@ -22,16 +22,23 @@ function App() {
       <List>
       {products.map((product) => (
         <Card
-          key={product.id}
+          id={product.id}
           title={product.title}
           price={product.price}
           rating={product.rating}
+          description={product.description}
+          discountPercentage={product.discountPercentage}
+          stock={product.stock}
+          category={product.category}
+          brand={product.brand}
+          thumbnail={product.thumbnail}
         />
       ))}
       </List>
       
         
        <Routes>
+        <Route path="/about" element={<App />}/>
         <Route path="/about" element={<AboutPage />}/>
         
       </Routes>

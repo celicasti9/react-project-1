@@ -7,10 +7,10 @@ function Sidebar() {
             <h3>
                 Admin Panel
             </h3>
-            <li><a href="#">Home</a>
+            <li><a href="#">Dashboard</a>
 
             </li>
-            <li><a href="#" className="AboutPage">About</a>
+            <li><a href="#" className="update">Update</a>
 
             </li>
             <li><a href="#">Settings</a>
