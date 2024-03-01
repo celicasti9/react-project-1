@@ -10,7 +10,7 @@
       "stock": 94,
       "brand": "Apple",
       "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+      "thumbnail": "data:image/jpeg;base64,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",
       "images": [
         "https://i.dummyjson.com/data/products/1/1.jpg",
         "https://i.dummyjson.com/data/products/1/2.jpg",
@@ -29,7 +29,7 @@
       "stock": 34,
       "brand": "Apple",
       "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/5/54/Apple_iPhone_X_-_back_%288111%29.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/2/1.jpg",
         "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -47,7 +47,7 @@
       "stock": 36,
       "brand": "Samsung",
       "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "thumbnail": "https://admin.hyperce.io/assets/thumbnail__12__preview.jpg?w=800",
       "images": ["https://i.dummyjson.com/data/products/3/1.jpg"]
     },
     {
@@ -60,7 +60,7 @@
       "stock": 123,
       "brand": "OPPO",
       "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+      "thumbnail": "https://www.apseshopping.com/uploads/products/original/614086fcc8023d56b9fc4b0f1be8871f5e1c40c0067e77.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/4/1.jpg",
         "https://i.dummyjson.com/data/products/4/2.jpg",
@@ -79,7 +79,7 @@
       "stock": 32,
       "brand": "Huawei",
       "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+      "thumbnail": "https://w0.peakpx.com/wallpaper/790/264/HD-wallpaper-huawei-p30-pro-huawei-te-thumbnail.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/5/1.jpg",
         "https://i.dummyjson.com/data/products/5/2.jpg",
@@ -96,7 +96,7 @@
       "stock": 83,
       "brand": "Apple",
       "category": "laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/d/dd/MacBook_Pro_2019_13_inch.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/6/1.png",
         "https://i.dummyjson.com/data/products/6/2.jpg",
@@ -114,7 +114,7 @@
       "stock": 50,
       "brand": "Samsung",
       "category": "laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+      "thumbnail": "https://image-us.samsung.com/SamsungUS/samsungbusiness/computing/galaxy-books/galaxy-book4-series/ConfiguratorGallery_Image_GB4Pro360_GrayMars4_16_US_Copilot_Moonstone_Gray_001_Front_MO.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/7/1.jpg",
         "https://i.dummyjson.com/data/products/7/2.jpg",
@@ -132,7 +132,7 @@
       "stock": 68,
       "brand": "Microsoft Surface",
       "category": "laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+      "thumbnail": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4LiXm?ver=45be&q=90&m=6&h=705&w=1253&b=%23FFFFFFFF&f=jpg&o=f&p=140&aim=true",
       "images": [
         "https://i.dummyjson.com/data/products/8/1.jpg",
         "https://i.dummyjson.com/data/products/8/2.jpg",
@@ -151,7 +151,7 @@
       "stock": 96,
       "brand": "Infinix",
       "category": "laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
+      "thumbnail": "https://m.media-amazon.com/images/I/81f11gKS6TL.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/9/1.jpg",
         "https://i.dummyjson.com/data/products/9/2.png",
@@ -170,7 +170,7 @@
       "stock": 89,
       "brand": "HP Pavilion",
       "category": "laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+      "thumbnail": "https://exceldisc.com/_next/image?url=https%3A%2F%2Fapiv2.exceldisc.com%2Fmedia%2F15057%2Fpavilion-15-dk1056wm.jpg&w=3840&q=75",
       "images": [
         "https://i.dummyjson.com/data/products/10/1.jpg",
         "https://i.dummyjson.com/data/products/10/2.jpg",
@@ -188,7 +188,7 @@
       "stock": 65,
       "brand": "Impression of Acqua Di Gio",
       "category": "fragrances",
-      "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
+      "thumbnail": "https://cdn-images.kooding.com/productDetailImage/323017-2/0d7e1ec7d05d9c199c57938b24c1c9816bbd4475.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/11/1.jpg",
         "https://i.dummyjson.com/data/products/11/2.jpg",
