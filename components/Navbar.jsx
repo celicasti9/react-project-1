@@ -1,5 +1,6 @@
 import Button from "./Button";
-import { NavLink } from "react-router-dom";
+//import "../styles/navbar.css"
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
