@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Sidebar from '../components/Sidebar'
 import { Routes, Route } from 'react-router-dom'
 import AboutPage from '../src/pages/AboutPage'
+import Dashboard from './pages/Dashboard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,8 +18,8 @@ function App() {
    
         
        <Routes>
-        <Route path="/about" element={<App />}/>
         <Route path="/about" element={<AboutPage />}/>
+        {/*<Route path="/about" element={<AboutPage />}/>*/}
         
       </Routes>
       </div>
