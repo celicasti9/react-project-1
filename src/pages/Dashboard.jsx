@@ -10,11 +10,7 @@ function Dashboard () {
   
     return (
       <>
-      
-      
       <div>
-        <Navbar />
-        <Sidebar />
         <List>
         {products.map((product) => (
           <Card
@@ -31,11 +27,7 @@ function Dashboard () {
           />
         ))}
         </List>
-        
-
-        </div>
-        <Footer />
-        
+        </div>     
       </>
     )
   }
