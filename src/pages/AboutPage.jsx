@@ -1,21 +1,3 @@
-// function AboutPage () {
-//     return (
-//       <div className="AboutPage">
-//         <div>
-//           <Navbar />
-//         <h1>About Page</h1>
-//         </div>
-//       </div>
-//     );
-//   }
-
-import Navbar from "../../components/Navbar";
-
-  
-//   export default AboutPage;
-
-// src/pages/AboutPage.jsx
-
 
 const imgURL = "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/react-routing/about.gif";
 

@@ -19,22 +19,7 @@ function App() {
     <div className='App'>
       <Navbar />
       <Sidebar />
-      <List>
-      {products.map((product) => (
-        <Card
-          id={product.id}
-          title={product.title}
-          price={product.price}
-          rating={product.rating}
-          description={product.description}
-          discountPercentage={product.discountPercentage}
-          stock={product.stock}
-          category={product.category}
-          brand={product.brand}
-          thumbnail={product.thumbnail}
-        />
-      ))}
-      </List>
+
       
         
        <Routes>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Sidebar() {
     return (
@@ -7,7 +8,11 @@ function Sidebar() {
             <h3>
                 Admin Panel
             </h3>
-            <li><a href="#">Dashboard</a>
+            <li><NavLink 
+            to="/dashboard" 
+            className={({ isActive }) => isActive ? "selected" : ""}>
+            Dashboard
+          </NavLink>
 
             </li>
             <li><a href="#" className="update">Update</a>
