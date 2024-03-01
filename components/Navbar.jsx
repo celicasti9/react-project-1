@@ -1,6 +1,5 @@
 import Button from "./Button";
-//import "../styles/navbar.css"
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -30,41 +29,3 @@ function Navbar() {
   );
 }
 export default Navbar;
-
-
-
-
-
-
-
-// import { Link, NavLink } from "react-router-dom";
-
-// function Navbar() {
-//     return (
-//         <nav className="Navbar">
-//             <ul>
-                
-//         <NavLink to="/" className={({ isActive }) => isActive ? "selected" : ""}>
-//           Home
-//         </NavLink>
-        
-//         <NavLink 
-//           to="/about" 
-//           className={({ isActive }) => isActive ? "selected" : ""}
-//          >
-//           About
-//         </NavLink>
-        
-//         <NavLink 
-//           to="/projects" 
-//           className={({ isActive }) => isActive ? "selected" : ""}
-//         >
-//           Projects
-//         </NavLink>
-
-//             </ul>
-//         </nav>
-//     );
-// }
-
-// export default Navbar;

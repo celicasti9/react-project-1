@@ -1,7 +1,7 @@
 
-import Navbar from "../../components/Navbar";
-import Sidebar from "../../components/Sidebar";
+
 import List from "../../components/List";
+import Card from "../../components/Card"
 
 
 
@@ -13,8 +13,7 @@ function Dashboard () {
       
       
       <div>
-        <Navbar />
-        <Sidebar />
+
         <List>
         {products.map((product) => (
           <Card

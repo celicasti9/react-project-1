@@ -19,7 +19,7 @@ function App() {
       <h1>Welcome to the main page baby!</h1>     
         
        <Routes>
-        <Route path="/about" element={<App />}/>
+        <Route path="/" element={<App />}/>
         <Route path="/about" element={<AboutPage />}/>
         
       </Routes>
