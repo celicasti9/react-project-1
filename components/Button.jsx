@@ -1,7 +1,7 @@
 
 function Button() {
     return (
-      <a href="https://web4swap.com" target="_blank">
+      <a href="https://github.com/celicasti9/react-project-1" target="_blank">
         <button className="button"> Github Repo </button>
       </a>
     )

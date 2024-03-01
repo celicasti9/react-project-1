@@ -3,9 +3,6 @@ import './App.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Sidebar from '../components/Sidebar'
-import List from '../components/List'
-import Card from '../components/Card'
-import products from "../src/data/products.json"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AboutPage from '../src/pages/AboutPage'
 
@@ -19,8 +16,7 @@ function App() {
     <div className='App'>
       <Navbar />
       <Sidebar />
-
-      
+      <h1>Welcome to the main page baby!</h1>     
         
        <Routes>
         <Route path="/about" element={<App />}/>

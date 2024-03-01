@@ -1,7 +1,7 @@
 
 import Navbar from "../../components/Navbar";
-import Sidebar from "../components/Sidebar";
-import List from "../components/List";
+import Sidebar from "../../components/Sidebar";
+import List from "../../components/List";
 
 
 
