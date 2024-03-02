@@ -1,23 +1,20 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+
 
 function Sidebar() {
     return (
         <div className="sidebar">
-        <ul>
+        <ul className="sidebar-Links">
+
             <h3>
                 Admin Panel
             </h3>
-            <li><NavLink 
-            to="/dashboard" 
-            className={({ isActive }) => isActive ? "selected" : ""}>
-            Dashboard
-          </NavLink>
+            <li><Link to="/"> Home </Link></li>
+            <li><Link to="dashboard"> Dashboard </Link></li>
 
-            </li>
-            <li><a href="#" className="update">Update</a>
-
-            </li>
+            
             <li><a href="#">Settings</a>
 
             </li>
@@ -26,7 +23,7 @@ function Sidebar() {
             </li>
         </ul>
         </div>
-    )
+    );
 }
 
 export default Sidebar;

@@ -1,20 +1,14 @@
+import List from  '../componentsList';
+import Card from '../components/Card';
 
-import Navbar from "../../components/Navbar";
-import Sidebar from "../../components/Sidebar";
-import List from "../../components/List";
-
-
-
-function Dashboard () {
+function Dashboard() {
+  return (
     
-  
-    return (
-      <>
       <div>
-        <Navbar />
-        <List><Sidebar />
+
+        <List>
         {products.map((product) => (
-          <Card
+          <Card>
             id={product.id}
             title={product.title}
             price={product.price}
@@ -25,12 +19,12 @@ function Dashboard () {
             category={product.category}
             brand={product.brand}
             thumbnail={product.thumbnail}
-          />
+          </Card>
         ))}
         </List>
-        </div>     
-      </>
-    )
-  }
-  
-  export default Dashboard
+      </div>     
+      
+  );
+}
+
+export default Dashboard;
