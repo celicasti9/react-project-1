@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard'
 import AboutPage from '../src/pages/AboutPage'
 import HomePage from './pages/HomePage'
 import ErrorPage from './pages/ErrorPage'
+import './data/products.json'
   
 
 
