@@ -1,29 +1,52 @@
-// ItemDetails.jsx
+import List from '../../components/List';
+import Card from '../../components/Card';
+import products from '../data/products.json';
+import { Link } from "react-router-dom";
 
-import React from 'react';
-import { useParams } from 'react-router-dom';
+function ItemDetails() {
 
-function itemDetails () {
-      // Accessing the id parameter from the route
-  const { id } = useParams();
+  {/*SHould show the details of the item clicked
 
-  // Assuming products is an array of items with unique ids
-  // Replace this with your actual data fetching logic
-  const product = products.find((item) => item.id === parseInt(id, 10));
+import { Link } from "react-router-dom";
 
-  if (!product) {
-    return <p>Item not found</p>;
-  }
+ const showDetailsClick = (id) => {
+    // Use the Link component to navigate to the item details page
+    return <Link to={`/item/${id}`} />;
+  };
+
+*/}
+const showDetailsClick = (id) => {
+  // Use the Link component to navigate to the item details page
+  return <Link to={`/item/${id}`} />;
+};
+ 
+  const productsList = products.map(({ id, title, price, rating, description, discountPercentage, stock, category, brand, thumbnail }) => (
+    <Card
+      key={id}
+      id={id}
+      title={title}
+      price={price}
+      rating={rating}
+      description={description}
+      discountPercentage={discountPercentage}
+      stock={stock}
+      category={category}
+      brand={brand}
+      thumbnail={thumbnail}
+    />
+  ));
 
   return (
     <div>
-      <h2>{product.title}</h2>
-      <p>Price: ${product.price}</p>
-      <p>Rating: {product.rating}</p>
-      <p>Description: {product.description}</p>
-      {/* Add more details based on your product data */}
+      <List>{productsList}</List>
     </div>
   );
 }
 
 export default ItemDetails;
+
+
+{/*const showDetailsClick = () => {
+        // 
+        console.log(`Showing details:\nID: ${products.id}\nTitle: ${products.title}\nDescription: ${products.description}\nPrice: ${products.price}\nDiscount: ${products.discountPercentage}\nStock: ${products.stock}\nBrand: ${products.brand}\nCategory: ${products.category}`);
+      }; */}

@@ -1,6 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 function Card (products) {
+
+
     const handleDeleteClick = () => {
         // 
         console.log(`Deleting ${products.title}`);
@@ -20,9 +24,10 @@ function Card (products) {
         <img src={Pic} alt="" width="100" height="100" />
         <p className="card-price"><b>Price:</b> {products.price}</p>
         <p className="card-rating"><b>Rating: {products.rating}</b></p>
-        <button className="details-button" onClick={showDetailsClick}>
+        <Link to={`/item/${products.id}`}>
+      <button className="details-button" onClick={showDetailsClick}>
         Details
-      </button>
+      </button></Link>
         <button className="buy-button" onClick={handleDeleteClick}>
         Delete
       </button>
@@ -33,3 +38,5 @@ function Card (products) {
   
   export default Card;
   
+
+  {/* <Link to="/about"> About </Link> */}
