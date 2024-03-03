@@ -1,29 +1,11 @@
-import List from  '../componentsList';
-import Card from '../components/Card';
-
 function Dashboard() {
   return (
-    
-      <div>
+    <div>
+      <h1>About Us</h1>
+      {/* <img src={imgURL} alt="the office gif" className="page-img" /> */}
 
-        <List>
-        {products.map((product) => (
-          <Card>
-            id={product.id}
-            title={product.title}
-            price={product.price}
-            rating={product.rating}
-            description={product.description}
-            discountPercentage={product.discountPercentage}
-            stock={product.stock}
-            category={product.category}
-            brand={product.brand}
-            thumbnail={product.thumbnail}
-          </Card>
-        ))}
-        </List>
-      </div>     
-      
+      <h1>Dashboard</h1>
+    </div>
   );
 }
 

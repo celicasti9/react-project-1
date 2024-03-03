@@ -15,12 +15,8 @@ function Sidebar() {
             <li><Link to="dashboard"> Dashboard </Link></li>
 
             
-            <li><a href="#">Settings</a>
-
-            </li>
-            <li><a href="#">Logout</a>
-
-            </li>
+            <li><Link to="*"> Settings </Link> </li>
+            <li><Link to="*"> Log out </Link></li>
         </ul>
         </div>
     );
