@@ -19,7 +19,7 @@ function AboutPage() {
         <br></br>
 
 
-        <h1>MISION</h1>
+        <h1 >MISION</h1>
         <br></br>
 
 

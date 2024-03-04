@@ -36,11 +36,11 @@ function UpdateProduct({ onUpdateProduct, productToUpdate }) {
     e.preventDefault();
     // Validate the form or perform additional checks if needed
 
-    // Call the onUpdateProduct function to update the product in the state
-    onUpdateProduct(updatedProduct);
+    // Call the onAddProduct function to add the new product to the state
+    onAddProduct(newProduct);
 
     // Clear the form after submitting
-    setUpdatedProduct({
+    setNewProduct({
       title: '',
       price: '',
       rating: '',
@@ -59,8 +59,32 @@ function UpdateProduct({ onUpdateProduct, productToUpdate }) {
       <form onSubmit={handleSubmit}>
         <label>
           Title:
-          
           </label>      
+          <label>
+          Price:
+        </label>
+        <label>
+          Rating:
+          </label>
+          <label>
+          Description:
+          </label>
+          <label>
+          Discount:
+          </label>
+          <label>
+          Stock:
+          </label>
+          <label>
+          Category:
+          </label>
+          <label>
+          Brand:
+          </label>
+          <label>
+          Thumbnail:
+          </label>
+          
         <br />
         <button type='submit'>Update Product</button>
       </form>
@@ -69,8 +93,6 @@ function UpdateProduct({ onUpdateProduct, productToUpdate }) {
 }
 
 export default UpdateProduct;
-
-
 
 
 {/*
