@@ -16,8 +16,7 @@ function ItemDetails() {
 
   return (
     <div>
-        <Card
-         />
+        <Card />
       <h2>{product.title}</h2>
       <p>Price: ${product.price}</p>
       <p>Rating: {product.rating}</p>

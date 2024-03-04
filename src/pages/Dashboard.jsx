@@ -1,30 +1,23 @@
+// Dashboard.jsx
+import React from 'react';
 import List from '../../components/List';
 import Card from '../../components/Card';
 import products from '../data/products.json';
-import { Link } from "react-router-dom";
 
 function Dashboard() {
-
-
-  const showDetailsClick = (id) => {
-    // Use the Link component to navigate to the item details page
-    return <Link to={`/item/${id}`} />;};
-
-  // Assuming 'products' is an array of product objects
-  const productsList = products.map(({ id, title, price, rating, description, discountPercentage, stock, category, brand, thumbnail }) => (
+  const productsList = products.map((product) => (
     <Card
-      key={id}
-      id={id}
-      title={title}
-      price={price}
-      rating={rating}
-      description={description}
-      discountPercentage={discountPercentage}
-      stock={stock}
-      category={category}
-      brand={brand}
-      thumbnail={thumbnail}
-      singleDetailsClick={() => showDetailsClick(product.id)}
+      key={product.id}
+      id={product.id}
+      title={product.title}
+      price={product.price}
+      rating={product.rating}
+      description={product.description}
+      discountPercentage={product.discountPercentage}
+      stock={product.stock}
+      category={product.category}
+      brand={product.brand}
+      thumbnail={product.thumbnail}
     />
   ));
 

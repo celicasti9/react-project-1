@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import products from '../src/data/products.json'
 
 function Card (products) {
 
@@ -17,7 +17,7 @@ function Card (products) {
 
 
 
-      let Pic = products.thumbnail;
+      const Pic = products.thumbnail;
     return (
       <div className="Card">
         <p className="card-title"><b></b> {products.title}</p>

@@ -8,7 +8,7 @@ import Dashboard from './pages/Dashboard'
 import AboutPage from '../src/pages/AboutPage'
 import HomePage from './pages/HomePage'
 import ErrorPage from './pages/ErrorPage'
-//import ItemDetails from '../src/pages/ItemDetails'
+import ItemDetails from '../src/pages/ItemDetails'
 import Card from '../components/Card'
 import './data/products.json'
   
@@ -29,7 +29,7 @@ function App() {
         <Route path="/" element={<HomePage />}/>
         <Route path="*" element={ <ErrorPage /> } />
         <Route path="/dashboard" element={<Dashboard /> } />
-        <Route path="/item/:id" element={<Card/>} />
+        <Route path="/item/:id" element={<ItemDetails />} />
       </Routes>
 
 
