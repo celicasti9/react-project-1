@@ -38,5 +38,3 @@ function Card (products) {
   
   export default Card;
   
-
-  {/* <Link to="/about"> About </Link> */}
