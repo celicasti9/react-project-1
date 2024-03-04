@@ -5,10 +5,29 @@ import products from '../src/data/products.json'
 function Card (products) {
 
 
-    const handleDeleteClick = () => {
-        // 
-        console.log(`Deleting ${products.title}`);
-      };
+  const handleDeleteClick = () => {
+    // Assuming products is fetched from an API endpoint
+    const apiUrl = '../src/data/products.json';
+    
+    fetch(`${apiUrl}/${products.id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        // Add any additional headers as needed
+      },
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        // Successful deletion
+        console.log(`Successfully deleted ${products.title}`);
+        // Trigger a re-fetch or update your state accordingly
+      })
+      .catch(error => {
+        console.error('Error deleting product:', error);
+      });
+  };
 
       const showDetailsClick = () => {
         // 
