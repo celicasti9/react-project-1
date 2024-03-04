@@ -11,6 +11,7 @@ import ErrorPage from './pages/ErrorPage'
 import ItemDetails from '../src/pages/ItemDetails'
 import AddProduct from './pages/AddProducts'
 import productsData from './data/products.json'
+import UpdateProduct from './pages/UpdateProduct'
 //import Update from '../src/pages/Update'
 
 
@@ -35,7 +36,7 @@ function App() {
         <Route path="*" element={ <ErrorPage /> } />
         <Route path="/dashboard" element={<Dashboard /> } />
         <Route path="/item/:id" element={<ItemDetails />} />
-        {/*<Route path="/update" element={<Update />} />*/}
+        <Route path="/update" element={<UpdateProduct />} />
         <Route path='/add-product' element={<AddProduct onAddProduct={handleAddProduct} />} />
       </Routes>
 

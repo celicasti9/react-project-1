@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 function AddProduct({ onAddProduct }) {
   const [newProduct, setNewProduct] = useState({
-    id: '',
     title: '',
     price: '',
     rating: '',
@@ -23,12 +22,11 @@ function AddProduct({ onAddProduct }) {
     e.preventDefault();
     // Validate the form or perform additional checks if needed
 
-    // Call the onAddProduct function to add the new product
+    // Call the onAddProduct function to add the new product to the state
     onAddProduct(newProduct);
 
     // Clear the form after submitting
     setNewProduct({
-      id: '',
       title: '',
       price: '',
       rating: '',
@@ -45,36 +43,34 @@ function AddProduct({ onAddProduct }) {
     <div>
       <h2>Add New Product</h2>
       <form onSubmit={handleSubmit}>
-    
-        <label>
+      <label>
           Title:
           <input type='text' name='title' value={newProduct.title} onChange={handleChange} />
         </label>
         <label>
           Price:
-          <input type='number' name='price' value={newProduct.title} onChange={handleChange} />
+          <input type='number' name='price' value={newProduct.price} onChange={handleChange} />
         </label>
         <label>
-          rating:
-          <input type='number' name='rating' value={newProduct.title} onChange={handleChange} />
+          Rating:
+          <input type='number' name='rating' value={newProduct.rating} onChange={handleChange} />
         </label>
         <label>
           Description:
-          <input type='text' name='description' value={newProduct.title} onChange={handleChange} />
+          <input type='text' name='description' value={newProduct.description} onChange={handleChange} />
         </label>
         <label>
           Discount:
-          <input type='number' name='discount' value={newProduct.title} onChange={handleChange} />
+          <input type='number' name='discountPercentage' value={newProduct.discountPercentage} onChange={handleChange} />
         </label>
         <label>
           Stock:
-          <input type='number' name='stock' value={newProduct.title} onChange={handleChange} />
+          <input type='number' name='stock' value={newProduct.stock} onChange={handleChange} />
         </label>
         <label>
           Category:
-          <input type='text' name='category' value={newProduct.title} onChange={handleChange} />
+          <input type='text' name='category' value={newProduct.category} onChange={handleChange} />
         </label>
-        {/* Add more fields based on your product properties */}
         <br />
         <button type='submit'>Add Product</button>
       </form>
@@ -83,3 +79,5 @@ function AddProduct({ onAddProduct }) {
 }
 
 export default AddProduct;
+
+
