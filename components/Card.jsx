@@ -47,9 +47,13 @@ function Card (products) {
       <button className="details-button" onClick={showDetailsClick}>
         Details
       </button></Link>
-        <button className="buy-button" onClick={handleDeleteClick}>
+        <button className="delete-button" onClick={handleDeleteClick}>
         Delete
       </button>
+      <Link to={`/edit-product/${products.id}`}>
+      <button className="update-button" onClick={showDetailsClick}>
+        Update
+      </button></Link>
       <br />
       </div>
     )
