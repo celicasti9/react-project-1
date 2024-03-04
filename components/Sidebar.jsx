@@ -14,6 +14,7 @@ function Sidebar() {
             <li><Link to="/"> Home </Link></li>
             <li><Link to="dashboard"> Dashboard </Link></li>
             <li><Link to="/add-product"> Add products </Link> </li>
+            <li><Link to="/update"> Update products </Link> </li>
             <li><Link to="*"> Settings </Link> </li>
             <li><Link to="*"> Log out </Link></li>
         </ul>
