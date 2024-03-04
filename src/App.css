@@ -212,3 +212,11 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+
+
+/* Item Details*/
+
+.item-details {
+  background-color: #ecf0f1;
+
+}

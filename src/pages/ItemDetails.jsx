@@ -2,12 +2,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../data/products.json';
-import Card from '../../components/Card';
+
 
 function ItemDetails() {
   const { id } = useParams();
-
-  // Assuming products is an array of items with unique ids
   const product = products.find((item) => item.id === parseInt(id, 10));
 
   if (!product) {
@@ -15,18 +13,21 @@ function ItemDetails() {
   }
 
   return (
-    <div>
-        <Card
-         />
+    <div className='item-details'>
+        
+
       <h2>{product.title}</h2>
+      <img src={product.thumbnail} alt={product.title} width="100" height="100" />
       <p>Price: ${product.price}</p>
       <p>Rating: {product.rating}</p>
       <p>Description: {product.description}</p>
-      * Add more details based on your product data *
+      <p>Discount: {product.discountPercentage}%</p>
+      <p>Stock: {product.stock}</p>
+      <p>Category: {product.category}</p>
+      <p>Brand: {product.brand}</p>
       </div>
       );
     }
     
     export default ItemDetails;
     
-
