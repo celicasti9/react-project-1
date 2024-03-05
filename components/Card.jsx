@@ -50,7 +50,7 @@ function Card (products) {
         <button className="delete-button" onClick={handleDeleteClick}>
         Delete
       </button>
-      <Link to={`/edit-product/${products.id}`}>
+      <Link to={`/update/${products.id}`}>
       <button className="update-button" onClick={showDetailsClick}>
         Update
       </button></Link>

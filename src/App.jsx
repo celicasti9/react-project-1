@@ -36,7 +36,7 @@ function App() {
         <Route path="*" element={ <ErrorPage /> } />
         <Route path="/dashboard" element={<Dashboard /> } />
         <Route path="/item/:id" element={<ItemDetails />} />
-        <Route path="/update" element={<UpdateProduct />} />
+        <Route path="/update/:id" element={<UpdateProduct />} />
         <Route path='/add-product' element={<AddProduct onAddProduct={handleAddProduct} />} />
         <Route path='/add-product' element={<AddProduct onAddProduct={handleAddProduct} />} />
       </Routes>
