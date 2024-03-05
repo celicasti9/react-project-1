@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: black;
-  background-color: rgb(6, 6, 56);
+  background-color: rgb(236, 224, 230);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,7 +22,7 @@ body {
 
 /* Apply a background color to the entire page */
 body {
-  background-color: rgb(63, 50, 50);
+  background-color: #7A9E9F;
 }
 
 /* Center the content in the middle of the page */
@@ -45,13 +45,13 @@ body {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #333;
+  color: #ece3e3;
 }
 
 /* Additional styling for specific components */
 /* Navbar */
 .navbar {
-  background-color: #3498db;
+  background-color: #4F6367;
   color: #fff;
   padding: 10px;
 }
@@ -59,8 +59,8 @@ body {
 /* Sidebar */
 .sidebar {
   width: 200px;
-  background-color: #2c3e50;
-  color: #fff;
+  background-color: #9ac6c4;
+  color: white;
   padding: 20px;
 }
 
@@ -89,21 +89,25 @@ body {
 
 .card-price {
   font-size: 1.1rem;
-  color: #e74c3c;
+  color: #4beca1;
 }
 
 .card-rating {
   margin-top: 5px;
-  color: #3498db;
+  color: #529ed0;
 }
 
 /* Footer */
 .footer {
-  background-color: #333;
+  background-color: #303f42;
   color: #fff;
   text-align: center;
   padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.footer a.developer-name {
+  color: rgb(64, 192, 179)
 }

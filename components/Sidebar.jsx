@@ -8,7 +8,8 @@ function Sidebar() {
         <div className="sidebar">
         <ul className="sidebar-Links">
 
-            <h3>
+            <h3> 
+                <br></br>
                 Admin Panel
             </h3>
             <li><Link to="/"> Home </Link></li>

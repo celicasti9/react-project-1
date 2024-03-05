@@ -63,26 +63,5 @@ function Card (products) {
 
 
 
-  {/*
-
-
-
-
-function Card({ id, title, price, rating, description, discountPercentage, stock, category, brand, thumbnail }) {
-  const [productsList, setProductsList] = useState(products);
-
-  const handleDeleteClick = () => {
-    // Find the index of the product in the array
-    const index = productsList.findIndex((product) => product.id === id);
-
-    if (index !== -1) {
-      // Create a new array without the deleted product
-      const updatedProducts = [...productsList.slice(0, index), ...productsList.slice(index + 1)];
-      
-      // Update the state to trigger a re-render
-      setProductsList(updatedProducts);
-      
-      console.log(`Deleting ${title}`);
-    }
-  };*/}
+ 
   

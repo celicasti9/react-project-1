@@ -6,9 +6,9 @@ function Footer() {
         <div className="footer">
         <h4>Follow us on Github</h4>
         <div>
-          <a href="https://github.com/celicasti9"><i>Celiel Castillo</i></a>
+          <a href="https://github.com/celicasti9" className= "developer-name" ><i>Celiel Castillo</i></a>
           <br></br>
-          <a href="https://github.com/nfigueroa1231"><i></i> Naiomy Figueroa Torres</a>
+          <a href="https://github.com/nfigueroa1231" className= "developer-name"><i></i> Naiomy Figueroa Torres</a>
         </div>
       </div>
     )
