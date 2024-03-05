@@ -1,5 +1,5 @@
 
-const imgURL = "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/react-routing/about.gif";
+// const imgURL = "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/react-routing/about.gif";
 
 function AboutPage() {
   return (
@@ -8,7 +8,7 @@ function AboutPage() {
       {/* <img src={imgURL} alt="the office gif" className="page-img" /> */}
 
       <p className="about-body">
-
+      
         Welcome to Student Commerce Online - The platform to scale your products!
         <br></br>
         <br></br>
@@ -19,7 +19,7 @@ function AboutPage() {
         <br></br>
 
 
-        <h1>WHO WE ARE</h1>
+        <h1 className="about-header">WHO WE ARE</h1>
         <br></br>
 
 
