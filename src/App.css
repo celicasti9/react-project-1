@@ -9,7 +9,7 @@
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
-  padding: 0;
+  padding-top: 0%;
 }
 
 .container {
@@ -268,6 +268,7 @@ button {
   font-weight: bold;
 }
 
+/*  about */
 
 .about-header {
   color: white;
@@ -276,4 +277,8 @@ button {
 
 .about-body{
   color: white
+}
+
+.About {
+  padding-top: 0%;
 }

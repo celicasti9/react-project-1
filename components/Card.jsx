@@ -35,7 +35,6 @@ function Card (products) {
       };
 
 
-
       const Pic = products.thumbnail;
     return (
       <div className="Card">
