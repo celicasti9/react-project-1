@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import products from '../src/data/products.json'
+import  '../src/data/products.json'
 
 function Card (products) {
 

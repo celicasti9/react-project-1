@@ -9,7 +9,7 @@ import AboutPage from '../src/pages/AboutPage'
 import HomePage from './pages/HomePage'
 import ErrorPage from './pages/ErrorPage'
 import ItemDetails from '../src/pages/ItemDetails'
-import AddProduct from './pages/AddProducts'
+import AddProduct from '../components/AddProduct'
 import productsData from './data/products.json'
 import UpdateProduct from './pages/UpdateProduct'
 //import Update from '../src/pages/Update'
@@ -38,7 +38,7 @@ function App() {
         <Route path="/item/:id" element={<ItemDetails />} />
         <Route path="/update/:id" element={<UpdateProduct />} />
         <Route path='/add-product' element={<AddProduct onAddProduct={handleAddProduct} />} />
-        <Route path='/add-product' element={<AddProduct onAddProduct={handleAddProduct} />} />
+        {/*<Route path='/add-product' element={<AddProduct onAddProduct={handleAddProduct} />} />*/}
       </Routes>
 
 
