@@ -12,7 +12,6 @@ import ItemDetails from '../src/pages/ItemDetails'
 import AddProduct from './pages/AddProducts'
 import productsData from './data/products.json'
 import UpdateProduct from './pages/UpdateProduct'
-import DeleteButton from '../components/DeleteButton'
 //import Update from '../src/pages/Update'
 
 
