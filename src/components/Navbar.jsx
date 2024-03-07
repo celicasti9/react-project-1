@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div className="navbar-container">
       <div className="navbar">
-        <img src="./images/studentLogo.jpg" alt="Logo" width="50" height="50" />
+        <img src="https://shorturl.at/mPQ59" alt="Logo" width="50" height="50" />
         <div className="navbar-title">
           <h1>Student Commerce Online</h1>
         </div>
