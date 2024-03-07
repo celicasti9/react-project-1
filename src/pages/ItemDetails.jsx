@@ -1,10 +1,12 @@
-import React from 'react';
+import { useContext } from 'react';
+import { ProductContext } from '../context/products.context';
 import { useParams } from 'react-router-dom';
-import products from '../data/products.json';
+
 
 
 function ItemDetails() {
   const { id } = useParams();
+  const { products } = useContext(ProductContext)
   const product = products.find((item) => item.id === parseInt(id, 10));
 
   if (!product) {

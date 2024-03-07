@@ -7,7 +7,7 @@ function AboutPage() {
       {/* <img src={imgURL} alt="the office gif" className="page-img" /> */}
 
       <p className="about-body">
-        Welcome to Student Commerce Online - The platform to scale your products!
+      Welcome to Student Commerce Online - The platform to scale your products!
         <br></br>
         <br></br>
 
