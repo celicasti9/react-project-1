@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import { useState, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ProductContext } from '../context/products.context';
 
-function AddProduct({ onAddProduct }) {
+
+function AddProducts({ onAddProduct }) {
+  const { ids, setIds } = useContext(ProductContext)
+
   const [newProduct, setNewProduct] = useState({
+    id: ids,
     title: '',
     price: '',
     rating: '',
@@ -13,16 +19,20 @@ function AddProduct({ onAddProduct }) {
     thumbnail: '',
   });
 
+
+  const navigate = useNavigate()
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setNewProduct({ ...newProduct, [name]: value });
   };
 
   const handleSubmit = (e) => {
+    setIds((prev) => prev + 1)
     e.preventDefault();
     
     onAddProduct(newProduct);
-
+    navigate('/dashboard')
     // Clear the form after submitting
     setNewProduct({
       title: '',
@@ -76,6 +86,6 @@ function AddProduct({ onAddProduct }) {
   );
 }
 
-export default AddProduct;
+export default AddProducts;
 
 

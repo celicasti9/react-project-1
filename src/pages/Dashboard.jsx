@@ -1,10 +1,16 @@
 // Dashboard.jsx
 import React from 'react';
-import List from '../../components/List';
-import Card from '../../components/Card';
-import products from '../data/products.json';
+import List from '../components/List';
+import Card from '../components/Card';
 
-function Dashboard() {
+
+function Dashboard({ products, setProducts }) {
+
+  const deleteProduct = (id) => {
+    let newProducts = products.filter((product) => product.id != id)
+    setProducts(newProducts)
+  }
+
   const productsList = products.map((product) => (
     <Card
       key={product.id}
@@ -18,6 +24,7 @@ function Dashboard() {
       category={product.category}
       brand={product.brand}
       thumbnail={product.thumbnail}
+      deleteProduct={deleteProduct}
     />
   ));
 

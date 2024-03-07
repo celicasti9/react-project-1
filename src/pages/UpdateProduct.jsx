@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { ProductContext } from '../context/products.context';
+import { useParams, useNavigate } from 'react-router-dom';
 
-function UpdateProduct({ onUpdateProduct, productToUpdate }) {
+function UpdateProduct() {
+
   const [updatedProduct, setUpdatedProduct] = useState({
     title: '',
     price: '',
@@ -13,15 +16,23 @@ function UpdateProduct({ onUpdateProduct, productToUpdate }) {
     thumbnail: '',
   });
 
+  const { id } = useParams()
+
+  const navigate = useNavigate()
+
+  const { products, setProducts } = useContext(ProductContext)
+
   useEffect(() => {
+    console.log("this is the id ===>", id)
+    let thisProduct = products.find((product) => product.id == id)
+    console.log("This product ===>", thisProduct)
     // Populate the form with the current product data when component mounts
-    setUpdatedProduct(productToUpdate);
-  }, [productToUpdate]);
+    setUpdatedProduct(thisProduct);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value, type, files } = e.target;
-  
-    // Handle different input types
+
     if (type === 'file') {
       setUpdatedProduct({ ...updatedProduct, [name]: files[0] });
     } else if (type === 'checkbox') {
@@ -30,27 +41,24 @@ function UpdateProduct({ onUpdateProduct, productToUpdate }) {
       setUpdatedProduct({ ...updatedProduct, [name]: value });
     }
   };
-  
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Validate the form or perform additional checks if needed
 
-    // Call the onAddProduct function to add the new product to the state
-    onAddProduct(newProduct);
+    let thisIndex
+    let foundProduct = products.find((product, i) => {
+      thisIndex = i
+      return product.id == id
+    })
 
-    // Clear the form after submitting
-    setNewProduct({
-      title: '',
-      price: '',
-      rating: '',
-      description: '',
-      discountPercentage: '',
-      stock: '',
-      category: '',
-      brand: '',
-      thumbnail: '',
-    });
+    console.log("Found product ===>", foundProduct)
+
+    let updatedProducts = [...products]
+    updatedProducts[thisIndex] = updatedProduct
+    setProducts(updatedProducts)
+
+    navigate(`/item/${id}`)
   };
 
   return (
@@ -59,32 +67,32 @@ function UpdateProduct({ onUpdateProduct, productToUpdate }) {
       <form onSubmit={handleSubmit}>
         <label>
           Title:
-          </label>      
-          <label>
+          <input type='text' name='title' value={updatedProduct.title} onChange={handleChange} />
+        </label>
+        <label>
           Price:
+          <input type='number' name='price' value={updatedProduct.price} onChange={handleChange} />
         </label>
         <label>
           Rating:
-          </label>
-          <label>
+          <input type='number' name='rating' value={updatedProduct.rating} onChange={handleChange} />
+        </label>
+        <label>
           Description:
-          </label>
-          <label>
+          <input type='text' name='description' value={updatedProduct.description} onChange={handleChange} />
+        </label>
+        <label>
           Discount:
-          </label>
-          <label>
+          <input type='number' name='discountPercentage' value={updatedProduct.discountPercentage} onChange={handleChange} />
+        </label>
+        <label>
           Stock:
-          </label>
-          <label>
+          <input type='number' name='stock' value={updatedProduct.stock} onChange={handleChange} />
+        </label>
+        <label>
           Category:
-          </label>
-          <label>
-          Brand:
-          </label>
-          <label>
-          Thumbnail:
-          </label>
-          
+          <input type='text' name='category' value={updatedProduct.category} onChange={handleChange} />
+        </label>
         <br />
         <button type='submit'>Update Product</button>
       </form>
