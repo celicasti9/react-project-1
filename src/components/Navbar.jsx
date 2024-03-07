@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div className="navbar-container">
       <div className="navbar">
-        <img src="./images/studentLogo.jpg" alt="Logo" width="50" height="50" />
+        <img src=" https://cdn-icons-png.flaticon.com/512/4437/4437635.png" alt="Logo" width="50" height="50" />
         <div className="navbar-title">
           <h1>Student Commerce Online</h1>
         </div>
@@ -21,3 +21,11 @@ function Navbar() {
   );
 }
 export default Navbar;
+
+
+
+
+// https://cdn-icons-png.flaticon.com/512/4437/4437635.png
+
+
+// https://www.freeiconspng.com/thumbs/grocery-cart-icon/grocery-cart-icon-6.png

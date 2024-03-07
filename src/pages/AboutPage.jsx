@@ -1,10 +1,8 @@
 
-// const imgURL = " ";
 function AboutPage() {
   return (
     <div className="About">
       <h1 className="about-header">About Us</h1>
-      {/* <img src={imgURL} alt="the office gif" className="page-img" /> */}
 
       <p className="about-body">
       Welcome to Student Commerce Online - The platform to scale your products!
