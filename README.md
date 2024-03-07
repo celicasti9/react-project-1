@@ -2,7 +2,7 @@
 
 
 - [Technologies Used](#technologies)
-- [Installation] (#installation)
+- [Installation](#installation)
 - [Screenshots](#screenshots)
 
 
@@ -23,4 +23,4 @@
    git clone https://github.com/celicasti9/react-project-1.git
 
 ## Screenshots
-   ![Student Logo](images/studentLogo.jpg)
+   ![Student Logo](images/stco.png)

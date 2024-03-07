@@ -63,7 +63,7 @@ body {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.4rem;
   transition: color 0.3s ease;
 }
 
@@ -279,6 +279,14 @@ button {
   color: white
 }
 
-.About {
+.about-div {
   padding-top: 0%;
+}
+
+.about-body {
+  padding: 0%;
+}
+
+.about-header {
+
 }

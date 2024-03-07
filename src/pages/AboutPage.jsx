@@ -2,18 +2,16 @@
 // const imgURL = " ";
 function AboutPage() {
   return (
-    <div className="About">
+    <div className="about-div">
       <h1 className="about-header">About Us</h1>
-      {/* <img src={imgURL} alt="the office gif" className="page-img" /> */}
-
       <p className="about-body">
       Welcome to Student Commerce Online - The platform to scale your products!
         <br></br>
         <br></br>
 
-        At Student Commerce Online, we celebrate diversity in all its forms.
-        We are more than an online platform; we are a destination where innovation,
-        fashion, and technology converge to offer you a unique shopping experience.
+      At Student Commerce Online, we celebrate diversity in all its forms.
+      We are more than an online platform; we are a destination where innovation,
+      fashion, and technology converge to offer you a unique shopping experience.
         <br></br>
       </p>
 

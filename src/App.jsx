@@ -30,7 +30,6 @@ function App() {
     <div className='App'>
       <Navbar />
       <Sidebar /> 
-
        <Routes>
         <Route path="/about" element={<AboutPage />}/>
         <Route path="/" element={<HomePage />}/>
@@ -40,8 +39,6 @@ function App() {
         <Route path='/add-product' element={<AddProducts onAddProduct={handleAddProduct} ids={ids} setIds={setIds}  />} />
         <Route path="*" element={ <ErrorPage /> } />
       </Routes>
-
-
       </div>
       <Footer />
       
